@@ -1,5 +1,5 @@
 (function () {
-    const href = '/img/logo.svg';
+    const href = '../img/logo.svg';
     let link = document.querySelector("link[rel~='icon']");
 
     if (!link) {
