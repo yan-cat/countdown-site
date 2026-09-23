@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="hero-image">
-                        <img src="/img/linux.png" alt="软件界面截图">
+                        <img src="img/linux.png" alt="软件界面截图">
                     </div>
                 </section>
 
@@ -70,10 +70,10 @@
             </div>
         </main>
         <script>
-            fetch('/components/header.html')
+            fetch('components/header.html')
                 .then(r => r.text())
                 .then(html => document.getElementById('header-placeholder').innerHTML = html);
-            fetch('/components/footer.html')
+            fetch('components/footer.html')
                 .then(r => r.text())
                 .then(html => document.getElementById('footer-placeholder').innerHTML = html);
         </script>
