@@ -2,10 +2,14 @@
     position: sticky;
     top: 0;
     left: 0;
-    width: 100%;
     padding: 14px 20px;
     background: #000000;
     color: #fff;
+
+    /* 标题和按钮并排 */
+    display: flex;
+    align-items: center;            /* 垂直居中 */
+    justify-content: space-between; /* 标题靠左，按钮组靠右 */
 
     /*悬浮在网页顶上*/
     position: fixed;
@@ -33,3 +37,15 @@
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
+.title-bar-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    .title-bar {
+        display: none;
+    }
+}

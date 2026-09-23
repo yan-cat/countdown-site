@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countdown 倒数日</title>
     <script src="css/load-css.js"></script>
     <script type="module" src="js/load-js.js"></script>
@@ -10,12 +10,12 @@
     <body>
         <div id="header-placeholder"></div>
         <main>
-            <dev class="content">
+            <div class="content">
                 <section class="hero">
                     <!-- 左边：简介 + 按钮 -->
                     <div class="hero-text">
                         <h1>Countdown 倒数日</h1>
-                        <p>使用 Qt + kirigami 开发的跨平台倒数日应用，用来记录生日、纪念日、截止日期这些重要的日子，一眼就能看清还剩多少天。界面简洁现代，支持无重复、月重复、年重复三种倒数模式，可在指定日期发通知提醒，数据以 JSON 保存在本地，不上传任何服务器。 支持 Linux 与 Windows，Android 为实验性支持，提供中英文界面。</p>
+                        <p>使用 Qt + kirigami 开发的开源跨平台倒数日应用</p>
                         <div class="hero-actions">
                             <a href="https://v4.gh-proxy.org/https://github.com/yan-cat/countdown/releases/latest/download/Countdown-windows-x86_64.exe" class="btn btn-Windows">
                             下载 Windows 版</a>
@@ -24,25 +24,32 @@
                             下载 Linux 版</a>
 
                             <a href="https://v4.gh-proxy.org/https://github.com/yan-cat/countdown/releases/latest/download/Countdown-android-arm64-v8a.apk" class="btn btn-Android">
-                            下载 Android 版</a>
+                            下载 Android 测试版</a>
                         </div>
                     </div>
                     <div class="hero-image">
-                    <img src="/img/linux.png" alt="软件界面截图">
+                        <img src="/img/linux.png" alt="软件界面截图">
                     </div>
                 </section>
 
-                <dev class="detail">
-                <h2>关于上传数据<h2/>
-                <p>纯本地存储，数据只属于你。
-                <p>我们为你提供最安全的隐私保护。默认情况下，你的所有倒数日数据都以 JSON 格式保存在设备本地，我们没有任何中央服务器，也永远不会收集或上传你的任何私人数据。</p>
-                <p>如果你需要在多设备间同步，我们提供了完全由你掌控的 WebDAV 同步选项（高级功能，默认关闭）。数据只会传输并保存在你自己配置的网盘（如自建的 NAS、Nextcloud、坚果云等）中，开发者依然无法触及你的任何数据</p>
-                </dev>
+                <div class="detail">
+                    <h2>简介</h2>
+                    <p>
+                        使用 Qt + kirigami 开发的开源跨平台倒数日应用，用来记录生日、纪念日、截止日期这些重要的日子，一眼就能看清还剩多少天。
+                        <br>界面简洁现代，支持无重复、月重复、年重复三种倒数模式，可在指定日期发通知提醒，数据以 JSON 保存在本地，不上传任何服务器。 支持 Linux、Windows 与 Android，提供中英文界面。
+                    </p>
+                    <br><br><br>
 
-                <p><br><br><br><br><br><br><br><br></p>
+                    <h2>关于上传数据</h2>
+                    <p>纯本地存储，数据只属于你。我们为你提供最安全的隐私保护。
+                    <br>默认情况下，你的所有倒数日数据都以 JSON 格式保存在设备本地，我们没有任何中央服务器，也永远不会收集或上传你的任何私人数据。
+                    <br>如果你需要在多设备间同步，我们提供了完全由你掌控的 WebDAV 同步选项（高级功能，默认关闭）。数据只会传输并保存在你自己配置的网盘（如自建的 NAS、Nextcloud、坚果云等）中，开发者依然无法触及你的任何数据</p>
+                    <br><br><br>
+
+                </div>
 
                 <div id="footer-placeholder"></div>
-            </dev>
+            </div>
         </main>
         <script>
             fetch('/components/header.html')

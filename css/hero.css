@@ -1,11 +1,16 @@
 .hero {
+    min-height: calc(100vh - 56px);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
     display: flex;
-    align-items: center;      /* 垂直居中 */
+    align-items: center;
     justify-content: space-between;
     gap: 48px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 80px 24px;
+    padding: 40px 24px;
+    box-sizing: border-box;
 }
 
 /* 左侧文案 */
@@ -72,6 +77,7 @@
 .hero-image {
     flex: 1 1 50%;
     min-width: 0;
+    justify-content: center;
 
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
@@ -81,7 +87,8 @@
 }
 
 .hero-image img {
-    width: 100%;
+    max-width: 100%;
+    width: auto;
     height: auto;
     display: block;
     border-radius: 12px;
