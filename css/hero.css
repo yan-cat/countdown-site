@@ -1,0 +1,107 @@
+.hero {
+    display: flex;
+    align-items: center;      /* 垂直居中 */
+    justify-content: space-between;
+    gap: 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+
+/* 左侧文案 */
+.hero-text {
+    flex: 1 1 50%;
+    min-width: 0;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 0 0 16px;
+}
+
+.hero-text p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #bbb;
+    margin: 0 0 32px;
+}
+
+/* 按钮组 */
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform .15s, opacity .15s;
+
+    color: #fff;
+
+    font-weight: 700; /* 加粗字体 */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* 向下一点点阴影 */
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: .9;
+}
+
+.btn-Windows {
+    background: #0078D4;
+}
+
+.btn-Linux {
+    background: #E95420;
+}
+
+.btn-Android {
+    background: #2E7D32;
+}
+
+/* 右侧截图 */
+.hero-image {
+    flex: 1 1 50%;
+    min-width: 0;
+
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+
+    /* 轻微提升对比度和饱和度，人眼会觉得更“锐” */
+    filter: contrast(1.05) saturate(1.05);
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .6);
+}
+
+/* 手机端：改成上下排列 */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 48px 20px;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+}

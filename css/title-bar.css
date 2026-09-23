@@ -1,0 +1,36 @@
+.title-bar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 14px 20px;
+    background: #000000;
+    color: #fff;
+
+    /*悬浮在网页顶上*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    overflow: hidden;
+}
+
+.title-bar h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.title-bar p {
+    margin: 6px 0 0 0;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+} }
+}
+

@@ -1,0 +1,16 @@
+.site-footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    align-items: center;
+
+    background: none;
+    color: #fff;
+
+    overflow: hidden;
+}
+
+.site-footer p {
+    text-align: center;
+}
